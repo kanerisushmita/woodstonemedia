@@ -1,0 +1,87 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+} */
+
+.offerings-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.offerings-slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.offerings-card {
+    min-width: 31.33%;
+    box-sizing: border-box;
+    /* padding: 10px; */
+    margin: 0 14px;
+    border: none;
+    text-align: center;
+    /* background-color: white; */
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.offerings-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.offerings-nav-buttons {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.offerings-nav-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.offerings-nav-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.offerings-slider-container .offerings-card h3{
+    color: #fff;
+}
+
+.offerings-slider-container .offerings-card p{
+    color: #fff;
+}
+
+.offerings-heading{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .offerings-card {
+        min-width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .offerings-card {
+        min-width: 50%;
+    }
+}
